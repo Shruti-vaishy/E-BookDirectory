@@ -1,0 +1,183 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>homepage</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100">
+
+    <nav class="bg-white shadow-lg">
+        <div class="container mx-auto px-4 py-4 flex justify-between items-center">
+            <div class="text-lg font-semibold text-gray-800">
+                Shruti's Bookstore
+            </div>
+            <div class="flex space-x-4">
+               <form action="" class="flex space-x-4">
+                <div class="relative">
+                    <input type="text" placeholder="Search Authors" class="mx-30 block w-full p-2 border border-beige-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                </div>                
+                <div class="relative">
+                    <input type="text" placeholder="Search Books" class="block w-full p-2 border border-gray-300 rounded-md focus:ring-blue-500 focus:border-blue-500">
+                    
+                </div>
+                <button class="bg-green-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-blue-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+                    Search
+                </button>
+                    
+               </form>
+            </div>
+            <div class="relative">
+                <select id="dropdown" onchange="topage()" class="block w-full py-2 px-4 bg-white border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500 bg-blue-200">
+                    <option >Select Category</option>
+                    <option value="https://www.goodreads.com/genres/science-fiction" >Science Fiction</option>
+                    <option value="https://www.goodreads.com/genres/thriller" >Thriller</option>
+                    <option value="https://www.goodreads.com/shelf/show/free-online-fiction" >Fiction</option >
+                    <option value="https://www.goodreads.com/shelf/show/historical-fiction" >Historical Fiction</option>
+                    <option value="https://www.goodreads.com/genres/mystery" >Mystery</option>
+                    <option value="https://www.goodreads.com/list/tag/fantasy" >Fantasy</option>
+                    <option value="https://www.goodreads.com/genres/romance" >Romance</option>
+                    <option value="https://www.goodreads.com/genres/horror" >Horror</option>
+                    <option value="https://www.goodreads.com/genres/adventure" >Adventure</option>
+                </select>
+            </div>
+    <a href="/addbook"><button class="bg-green-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-green-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-green-500">
+    Add More Books
+    </button></a>
+
+    <a href="/logout"><button class="bg-red-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+      Logout </button></a>   
+  
+        </div>
+    </nav>
+
+    <div>
+   <a href="https://www.gutenberg.org/cache/epub/1342/pg1342-images.html">
+    <button class="my-4 mx-6 bg-beige-200 text-white py-2 px-4 rounded-md shadow-md hover:bg-golden-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-golden-500">
+        <div id="container">
+            <div class="card">
+              <img class="size-60" src="https://www.gutenberg.org/cache/epub/1342/images/cover.jpg" alt="Lago di Braies">  
+              <p class="text-black text-2xl">Pride and Prejudice</p>
+            </div>
+          </div>
+    </button>
+   </a>
+
+    <a href="https://www.gutenberg.org/cache/epub/558/pg558-images.html">
+        <button class=" mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/558/images/cover.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">The Thirty-Nine Steps</p>
+                </div>
+              </div>
+        </button>
+    </a>
+
+   <a href="https://www.gutenberg.org/cache/epub/1182/pg1182-images.html">
+    <button class="mx-2 bg-brown-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-brown-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brown-500">
+        <div id="container">
+            <div class="card">
+              <img class="size-60" src="https://www.gutenberg.org/cache/epub/1182/images/cover.jpg" alt="Lago di Braies">  
+              <p class="text-black text-xl">Dope</p>
+            </div>
+          </div>
+    </button>
+   </a>
+
+    <a href="https://www.gutenberg.org/cache/epub/2600/pg2600-images.html">
+        <button class="mx-2 bg-brown-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-brown-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-brown-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/2600/images/cover.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">War and Peace</p>
+                </div>
+              </div>
+        </button>
+    </a>
+
+    <a href="https://www.gutenberg.org/cache/epub/20289/pg20289-images.html">
+        <button class="mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/20289/images/cover.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">Herein Is Love</p>
+                </div>
+              </div>
+        </button>
+    </a>
+    </div>
+
+    <div>
+        <a href="https://www.gutenberg.org/cache/epub/1322/pg1322-images.html">
+            <button class="mx-6 my-3 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+                <div id="container">
+                    <div class="card">
+                      <img class="size-60" src="https://www.gutenberg.org/cache/epub/1322/images/cover.jpg" alt="Lago di Braies">  
+                      <p class="text-black text-xl">Leaves and Grass</p>
+                    </div>
+                  </div>
+            </button>
+        </a>
+
+      <a href="https://www.gutenberg.org/cache/epub/12/pg12-images.html">
+        <button class="mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/12/images/cover.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">Through the Looking Glass</p>
+                </div>
+              </div>
+        </button>
+      </a>
+
+     <a href="https://www.gutenberg.org/cache/epub/30254/pg30254-images.html">
+        <button class="mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/30254/pg30254.cover.medium.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">The Romance of Lust</p>
+                </div>
+              </div>
+        </button>
+     </a>
+
+      <a href="https://www.gutenberg.org/cache/epub/203/pg203-images.html">
+        <button class="mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+            <div id="container">
+                <div class="card">
+                  <img class="size-60" src="https://www.gutenberg.org/cache/epub/203/pg203.cover.medium.jpg" alt="Lago di Braies">  
+                  <p class="text-black text-xl">Uncle Toms's Cabin</p>
+                </div>
+              </div>
+        </button>
+      </a>
+
+        <a href="https://www.gutenberg.org/cache/epub/41595/pg41595-images.html">
+            <button class="mx-2 bg-beige-500 text-white py-2 px-4 rounded-md shadow-md hover:bg-beige-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-beige-500">
+                <div id="container">
+                    <div class="card">
+                      <img class="size-60" src="https://www.gutenberg.org/cache/epub/41595/pg41595.cover.medium.jpg" alt="Lago di Braies">  
+                      <p class="text-black text-xl">The Funny Side of Physics</p>
+                    </div>
+                  </div>
+            </button>
+        </a>
+
+    </div>
+
+   
+<script>
+  function topage(){
+    var select = document.getElementById("dropdown");
+    var selectedvalue = select.value;
+
+    if(selectedvalue){
+      window.location.href = selectedvalue;
+    }
+  }
+</script>
+    
+</body>
+</html>

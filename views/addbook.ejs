@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Add Book</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+</head>
+<body class="bg-gray-100 flex items-center justify-center min-h-screen">
+
+    <div class="bg-white p-8 rounded-lg shadow-lg w-full max-w-md">
+        <h2 class="text-2xl font-bold mb-6 text-center text-gray-800">! Add Your Book to BookDirectory !</h2>
+        <form action="/bookpost" method="post" class="space-y-6" enctype="multipart/form-data">           
+            <div>
+                <label for="authorname" class="block text-sm font-medium text-gray-700">Author name</label>
+                <input type="text" id="user" name="user" placeholder="Enter author name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="date" class="block text-sm font-medium text-gray-700">Published Date</label>
+                <input type="date" id="date" name="publisheddate" placeholder="Enter date" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>
+            <div>
+                <label for="Book" class="block text-sm font-medium text-gray-700">Book</label>
+                <input type="text" id="book" name="book" placeholder="Enter book name" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div> 
+            <div>
+                <label for="image" class="block text-sm font-medium text-gray-700">Upload image</label>
+                <input type="file" id="image" name="image" placeholder="Place your book here" class="mt-1 block w-full p-3 border border-gray-300 rounded-md shadow-sm focus:ring-blue-500 focus:border-blue-500">
+            </div>          
+            <div>
+                <button type="submit" class="w-full py-3 px-4 bg-red-500 text-white font-semibold rounded-md shadow hover:bg-red-600 focus:outline-none focus:ring-2 focus:ring-offset-2 focus:ring-red-500">
+                    Submit
+                </button>
+            </div>
+        </form>
+    </div>
+    
+</body>
+</html>
